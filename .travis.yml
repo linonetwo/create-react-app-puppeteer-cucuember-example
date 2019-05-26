@@ -15,5 +15,5 @@ before_install:
 
 script:
   - npm run build
-  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run cucumber; fi
+  - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then npm run e2e; fi
   - npm test
