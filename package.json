@@ -1,0 +1,74 @@
+{
+  "name": "cashier",
+  "description": "",
+  "version": "0.1.0",
+  "author": "linonetwo",
+  "license": "MIT",
+  "scripts": {
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "e2e": "cross-env NODE_ENV=debug cucumber-js",
+    "e2e-headless": "cucumber-js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "rescripts": [
+    [
+      "use-babel-config",
+      ".babelrc.js"
+    ]
+  ],
+  "dependencies": {
+    "@material-ui/core": "^4.0.0",
+    "@material-ui/styles": "^4.0.0",
+    "bluebird": "^3.5.5",
+    "lodash": "^4.17.11",
+    "param.macro": "^3.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0",
+    "styled-is": "^1.3.0",
+    "styled-normalize": "^8.0.6"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.3.3",
+    "@rescripts/cli": "0.0.10",
+    "@rescripts/rescript-env": "0.0.10",
+    "@types/jest": "^24.0.13",
+    "@types/lodash": "^4.14.132",
+    "@types/node": "^12.0.2",
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.15",
+    "babel-plugin-array-last-index": "0.0.4",
+    "babel-plugin-styled-components": "^1.10.0",
+    "cheerio": "^1.0.0-rc.3",
+    "concurrently": "^4.1.0",
+    "cross-env": "^5.2.0",
+    "cucumber": "^5.1.0",
+    "exponential-backoff-generator": "^1.1.0",
+    "micro": "^9.3.4",
+    "puppeteer": "^1.17.0",
+    "react-scripts": "^3.0.1",
+    "serve-handler": "^6.0.1",
+    "tslint": "^5.16.0",
+    "tslint-clean-code": "^0.2.9",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-immutable": "^5.5.2",
+    "tslint-react": "^4.0.0",
+    "tslint-react-hooks": "^2.1.0",
+    "tslint-sonarts": "^1.9.0",
+    "typescript": "^3.4.5",
+    "typescript-styled-plugin": "^0.14.0"
+  }
+}
