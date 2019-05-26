@@ -56,3 +56,24 @@ Then('wait {}', async function(forWhat) {
 Then('I have same items amongs {string} and {string}', function(dbLocation, className) {
   return 'pending';
 });
+
+Then('I have digits in range {number} to {number} in {string}', function(rangeFrom, rangeTo, className) {
+  return 'pending';
+});
+
+Then('I have a dashboard named {string}', function(string) {
+  return 'pending';
+});
+
+Then('I select item(s) {string} in the list', function(itemList) {
+  const items = itemList.split(' ');
+  return 'pending';
+});
+
+Then('The selection result has {string}', function (string) {
+  return 'pending';
+});
+
+Then('The selection result has {int} item(s)', function(itemCount) {
+  return 'pending';
+});
